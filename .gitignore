@@ -1,0 +1,11 @@
+# Dependencias
+node_modules/
+
+# Entorno y configuración
+.env
+*.log
+
+# Carpetas de VS Code y sistema
+.vscode/
+.DS_Store
+Thumbs.db
