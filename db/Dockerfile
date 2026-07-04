@@ -2,9 +2,9 @@
 FROM mysql:8
 
 # Variables de entorno (se aplicarán automáticamente al iniciar el contenedor)
-ENV MYSQL_ROOT_PASSWORD=admin123
+ENV MYSQL_ROOT_PASSWORD=alumno123
 ENV MYSQL_DATABASE=tienda_perritos
-ENV MYSQL_USER=alumno
+ENV MYSQL_USER=admin
 ENV MYSQL_PASSWORD=alumno123
 
 # Copiar el script de inicialización dentro de la imagen

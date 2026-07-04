@@ -5,13 +5,14 @@ const mysql = require("mysql2/promise");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const {
-  DB_HOST = "10.0.2.134", // Asegúrate que esta sea la IP privada de tu DB
-  DB_USER = "root",
-  DB_PASSWORD = "admin123",
-  DB_NAME = "tienda_perritos",
-  DB_PORT = 3306,
-} = process.env;
+// En lugar de tener la IP 10.0.2.134, usa esto:
+const dbConfig = {
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    port: process.env.DB_PORT
+};
 
 app.use(cors());
 app.use(express.json());
